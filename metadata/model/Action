@@ -1,0 +1,137 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "action",
+        "designer|userClassName": "Action"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "hasMany": "refgroup"
+    },
+    "name": "MyModel",
+    "designerId": "8a390104-02ae-4c57-bf89-7aeac7754dd7",
+    "cn": [
+        {
+            "type": "Ext.data.field.Integer",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyInteger7",
+            "designerId": "cff74f80-ee38-4cb5-83a0-304149f13552"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "type"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyString7",
+            "designerId": "488f08b4-72ac-4983-9ab2-128ee8b30945"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "description"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyField5",
+            "designerId": "70011956-62be-4c8e-8e5f-d01ef855dc2c"
+        },
+        {
+            "type": "Ext.data.field.Integer",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "permissionId"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyInteger8",
+            "designerId": "5148291f-2626-415d-ad74-ca524f62d251"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "code"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyString8",
+            "designerId": "d00e7513-4816-45b8-b7c1-95668f4a0cff"
+        },
+        {
+            "type": "Ext.data.schema.HasMany",
+            "reference": {
+                "name": "hasMany",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "associatedName": "applicableStatuses",
+                "designer|displayName": "HasManyAdjustmentStatus",
+                "model": "AdjustmentStatus"
+            },
+            "configAlternates": {
+                "associatedName": "string",
+                "designer|displayName": "string",
+                "model": "model"
+            },
+            "name": "MyHasManyAssociation1",
+            "designerId": "2ae69463-772a-4345-a44e-e1c9aea53b1d"
+        },
+        {
+            "type": "Ext.data.field.Integer",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "applicationId"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyInteger29",
+            "designerId": "87722f5f-e060-4c1e-9683-7ce7be2e55fb"
+        }
+    ]
+}

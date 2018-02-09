@@ -1,0 +1,48 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "controllers": [
+            "MyController"
+        ],
+        "models": [
+            "User",
+            "ApplicationCode",
+            "Role",
+            "Action",
+            "RoleType",
+            "ActionsAssignedToRoleDTO",
+            "SalesDepartment",
+            "AdjustmentStatus",
+            "AdjustmentType",
+            "CustomerGroup2",
+            "NotificationFrequency",
+            "SalesCompany",
+            "Facility"
+        ],
+        "name": "SECURITY",
+        "stores": [
+            "applicationCode",
+            "roles"
+        ],
+        "views": [
+            "Users",
+            "MyViewport",
+            "LoginWindow",
+            "Roles"
+        ]
+    },
+    "configAlternates": {
+        "models": "typedarray",
+        "name": "string",
+        "stores": "typedarray",
+        "views": "typedarray",
+        "controllers": "typedarray"
+    },
+    "name": "Application",
+    "designerId": "application"
+}

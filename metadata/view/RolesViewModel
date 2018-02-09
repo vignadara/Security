@@ -1,0 +1,233 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "roles",
+        "designer|userClassName": "RolesViewModel"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "designerId": "78bc6506-2c47-4738-9c33-0e92e77f47c8",
+    "cn": [
+        {
+            "type": "jsonstore",
+            "reference": {
+                "name": "stores",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "model": "Action",
+                "name": "action"
+            },
+            "configAlternates": {
+                "model": "model",
+                "name": "string"
+            },
+            "name": "MyJsonStore1",
+            "designerId": "734d440c-4f0c-4ad3-94d0-fdd4ed403784",
+            "cn": [
+                {
+                    "type": "Ext.data.proxy.Memory",
+                    "reference": {
+                        "name": "proxy",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyMemoryProxy1",
+                    "designerId": "b4f94ce7-12e8-476d-a1c7-c0dd3606b9cd"
+                }
+            ]
+        },
+        {
+            "type": "jsonstore",
+            "reference": {
+                "name": "stores",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoLoad": true,
+                "model": "RoleType",
+                "name": "roleTypes"
+            },
+            "configAlternates": {
+                "autoLoad": "boolean",
+                "model": "model",
+                "name": "string"
+            },
+            "name": "MyJsonStore2",
+            "designerId": "9b6d8b78-94c5-4144-8ebf-4af70ab7c004",
+            "cn": [
+                {
+                    "type": "Ext.data.proxy.Ajax",
+                    "reference": {
+                        "name": "proxy",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "extraParams": [
+                            "{applicationCode: 'CAMS'}"
+                        ],
+                        "url": "/DIAM_SECURITY/api/admin/roleTypes"
+                    },
+                    "configAlternates": {
+                        "extraParams": "object",
+                        "url": "string"
+                    },
+                    "name": "MyAjaxProxy3",
+                    "designerId": "a602445a-ef2a-4e21-bf4e-ca08005bb462",
+                    "cn": [
+                        {
+                            "type": "Ext.data.reader.Json",
+                            "reference": {
+                                "name": "reader",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "rootProperty": "data"
+                            },
+                            "configAlternates": {
+                                "rootProperty": "string"
+                            },
+                            "name": "MyJsonReader5",
+                            "designerId": "2e1d73d4-1fc7-4d03-bd34-96fdbe95d78d"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.data.Store",
+            "reference": {
+                "name": "stores",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoLoad": null,
+                "data": null,
+                "model": "ActionsAssignedToRoleDTO",
+                "name": "actionsAssignedToRoleDTO"
+            },
+            "configAlternates": {
+                "autoLoad": "boolean",
+                "data": "array",
+                "model": "model",
+                "name": "string"
+            },
+            "name": "actionsAssignedToRoleDTOs",
+            "designerId": "561c32e1-ea85-4b6a-a61e-ab938c2f6aca",
+            "cn": [
+                {
+                    "type": "Ext.data.proxy.Ajax",
+                    "reference": {
+                        "name": "proxy",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "extraParams": [
+                            "{applicationCode: 'CAMS'}"
+                        ],
+                        "url": "/DIAM_SECURITY/api/admin/actions_for_role/id"
+                    },
+                    "configAlternates": {
+                        "url": "string",
+                        "extraParams": "object"
+                    },
+                    "name": "MyAjaxProxy6",
+                    "designerId": "4cbea787-ab6a-412a-91cb-ab98eef7f9b4",
+                    "cn": [
+                        {
+                            "type": "Ext.data.reader.Json",
+                            "reference": {
+                                "name": "reader",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "rootProperty": "data"
+                            },
+                            "configAlternates": {
+                                "rootProperty": "string"
+                            },
+                            "name": "MyJsonReader3",
+                            "designerId": "cd14023c-9016-49ec-8a29-19f1db4eeaa7"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.data.Store",
+            "reference": {
+                "name": "stores",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoLoad": true,
+                "data": null,
+                "model": "Role",
+                "name": "roles"
+            },
+            "configAlternates": {
+                "autoLoad": "boolean",
+                "data": "array",
+                "model": "model",
+                "name": "string"
+            },
+            "name": "roles",
+            "designerId": "3692102f-bd68-402a-aea2-92dda0343546",
+            "cn": [
+                {
+                    "type": "Ext.data.proxy.Ajax",
+                    "reference": {
+                        "name": "proxy",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "extraParams": [
+                            "{applicationCode: 'CAMS'}"
+                        ],
+                        "url": "/DIAM_SECURITY/api/admin/roles"
+                    },
+                    "configAlternates": {
+                        "extraParams": "object",
+                        "url": "string"
+                    },
+                    "name": "MyAjaxProxy1",
+                    "designerId": "709fbf75-cfb2-40e6-9f3e-99914e293d4a",
+                    "cn": [
+                        {
+                            "type": "Ext.data.reader.Json",
+                            "reference": {
+                                "name": "reader",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "rootProperty": "data"
+                            },
+                            "configAlternates": {
+                                "rootProperty": "string"
+                            },
+                            "name": "MyJsonReader2",
+                            "designerId": "3c807330-360e-4c16-96d0-b3cef60f0a07"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

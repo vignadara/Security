@@ -1,0 +1,277 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "clientIdProperty": "id",
+        "designer|userAlias": "role",
+        "designer|userClassName": "Role"
+    },
+    "configAlternates": {
+        "hasMany": "refgroup",
+        "hasOne": "refgroup",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "clientIdProperty": "string"
+    },
+    "name": "MyModel",
+    "designerId": "407627f1-0599-4454-bb77-cfcfc3a4c913",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "fiel",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "Ext.data.field.Integer",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyInteger6",
+            "designerId": "cd0070a7-37e0-41b4-8571-4238c58ca9e0"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "groupEmail"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyString5",
+            "designerId": "efe81607-090a-4d3f-87ba-aab8a3d18771"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "name"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyString6",
+            "designerId": "bdae4c95-6344-4cd1-ba14-4b2f99556e58"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "createdBy"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyField6",
+            "designerId": "b64f3b36-d6f1-4219-9fe2-3adba5baf3e7"
+        },
+        {
+            "type": "Ext.data.field.Date",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dateReadFormat": "time",
+                "dateWriteFormat": "c",
+                "name": "updatedOn"
+            },
+            "configAlternates": {
+                "name": "string",
+                "dateReadFormat": "string",
+                "dateWriteFormat": "string"
+            },
+            "name": "MyDate4",
+            "designerId": "1e748b7b-4ea7-4dd1-9f35-f7f13a9b83fa"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "updatedBy"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyField10",
+            "designerId": "929066a2-d86a-4027-b5d4-1e185e74bffb"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "critical": true,
+                "name": "roleType",
+                "persist": true
+            },
+            "configAlternates": {
+                "critical": "boolean",
+                "name": "string",
+                "persist": "boolean"
+            },
+            "name": "MyField11",
+            "designerId": "e0128002-48c2-4a22-81ab-93cce1d41f9e"
+        },
+        {
+            "type": "Ext.data.field.Integer",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "roleTypeId"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyInteger4",
+            "designerId": "3d827e06-5878-4b2c-9602-d3a80bd0b53d"
+        },
+        {
+            "type": "Ext.data.field.Date",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dateReadFormat": "time",
+                "dateWriteFormat": "c",
+                "name": "createdOn"
+            },
+            "configAlternates": {
+                "name": "string",
+                "dateReadFormat": "string",
+                "dateWriteFormat": "string"
+            },
+            "name": "MyDate5",
+            "designerId": "2d7966f1-c54e-405f-b0b0-21a4d065be14"
+        },
+        {
+            "type": "Ext.data.schema.HasMany",
+            "reference": {
+                "name": "hasMany",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "associationKey": "actions",
+                "designer|displayName": "HasManyAction",
+                "model": "Action"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "model": "model",
+                "associationKey": "string"
+            },
+            "name": "MyHasManyAssociation",
+            "designerId": "10af2a6f-c35e-4680-ba7a-3fd53b94e40e",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "associationKey",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "Ext.data.schema.HasOne",
+            "reference": {
+                "name": "hasOne",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "associatedName": null,
+                "associationKey": "roleTypes",
+                "designer|displayName": "HasOneRoleType",
+                "model": "RoleType",
+                "name": "roleTypes"
+            },
+            "configAlternates": {
+                "associatedName": "string",
+                "designer|displayName": "string",
+                "model": "model",
+                "name": "string",
+                "associationKey": "string"
+            },
+            "name": "MyHasOneAssociation",
+            "designerId": "98e01906-3444-400f-9106-baf5e0c1a71f",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "associationKey",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "Ext.data.field.Integer",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "applicationId"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyInteger14",
+            "designerId": "869a4bad-d60f-40c3-b1cf-871660104706"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "applicationCode"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyString43",
+            "designerId": "1db4cf41-3b15-40c4-8ee4-43ad5d824924"
+        }
+    ]
+}

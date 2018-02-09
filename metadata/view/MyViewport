@@ -1,0 +1,230 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "myviewport",
+        "designer|userClassName": "MyViewport",
+        "height": 250,
+        "layout": "border",
+        "width": 400
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "height": "auto",
+        "layout": "string",
+        "width": "auto"
+    },
+    "name": "MyViewport",
+    "designerId": "5fe6882e-a454-414a-a9f7-b577b7157939",
+    "viewControllerInstanceId": "b83fff58-62fc-47b8-a98c-cffae850af0f",
+    "viewModelInstanceId": "80f531ee-32f6-4f01-9c74-96779541573c",
+    "cn": [
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "container",
+                "itemId": "container",
+                "layout": "card",
+                "layout|region": "center"
+            },
+            "configAlternates": {
+                "id": "string",
+                "itemId": "string",
+                "layout": "string",
+                "layout|region": "string"
+            },
+            "name": "MyContainer4",
+            "designerId": "2c79120a-c7cd-4422-8c2f-9d3e069902d8",
+            "cn": [
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "usersPanel",
+                        "reference": null
+                    },
+                    "configAlternates": {
+                        "reference": "string",
+                        "itemId": "string"
+                    },
+                    "name": "users1",
+                    "designerId": "c50083cd-36ae-47e8-bb20-cdc5d859d86f",
+                    "masterInstanceId": "370c1ab4-e718-4020-a48d-ef92105e6e0c"
+                },
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "rolesPanel"
+                    },
+                    "configAlternates": {
+                        "itemId": "string"
+                    },
+                    "name": "roles1",
+                    "designerId": "d09cc03d-15d5-485a-996b-327684e23293",
+                    "masterInstanceId": "ac60483a-8e42-477d-946a-d3826b3df9f7"
+                }
+            ]
+        },
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 37,
+                "layout|region": "north"
+            },
+            "configAlternates": {
+                "height": "auto",
+                "layout|region": "string"
+            },
+            "name": "MyToolbar3",
+            "designerId": "248b2e11-527e-4daf-9d91-674aa76d0546",
+            "cn": [
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "text": "Adminstration"
+                    },
+                    "configAlternates": {
+                        "layout|flex": "number",
+                        "text": "string"
+                    },
+                    "name": "MyButton12",
+                    "designerId": "acc6610f-7b3f-468f-ab74-fbe079be1253",
+                    "cn": [
+                        {
+                            "type": "Ext.menu.Menu",
+                            "reference": {
+                                "name": "menu",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "width": 120
+                            },
+                            "configAlternates": {
+                                "width": "auto"
+                            },
+                            "name": "MyMenu",
+                            "designerId": "39a55f0f-04bb-446e-99fd-4f9ec3b387a4",
+                            "cn": [
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Roles"
+                                    },
+                                    "configAlternates": {
+                                        "text": "string"
+                                    },
+                                    "name": "MyMenuItem",
+                                    "designerId": "754070f5-0f92-4df2-bf73-ed5ef341e9fc",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onRolestemClick",
+                                                "implHandler": [
+                                                    "Ext.getCmp('container').getLayout().setActiveItem('rolesPanel');"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onRolestemClick",
+                                            "designerId": "961d261b-ba25-4d7d-834d-f57b410b55a1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Users"
+                                    },
+                                    "configAlternates": {
+                                        "text": "string"
+                                    },
+                                    "name": "MyMenuItem1",
+                                    "designerId": "41d443ea-acb3-4c5e-8efc-3cd0b05fe9e4",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onUsersItemClick",
+                                                "implHandler": [
+                                                    "Ext.getCmp('container').getLayout().setActiveItem('usersPanel');"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onUsersItemClick",
+                                            "designerId": "b477e67a-0212-44e2-afc2-6450ef85f3bc"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

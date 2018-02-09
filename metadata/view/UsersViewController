@@ -1,0 +1,126 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "users",
+        "designer|userClassName": "UsersViewController"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "designerId": "9510f1ac-5751-4f51-835f-5f5cb9838589",
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "view"
+                ],
+                "fn": "showView",
+                "implHandler": [
+                    "var layout = this.getReferences().display.getLayout();",
+                    "layout.setActiveItem(this.lookupReference(view));"
+                ]
+            },
+            "configAlternates": {
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "showView",
+            "designerId": "1ffb58a6-1387-47db-8cd4-81cbb3cff663"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "editUser",
+                "implHandler": [
+                    "this.showEditForm();"
+                ]
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "editUser",
+            "designerId": "10767b40-b020-48cf-87af-0b2e013df6c6"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "record"
+                ],
+                "fn": "showEditForm",
+                "implHandler": [
+                    " var me = this;",
+                    "",
+                    "        if (!Ext.isEmpty(record)){",
+                    "        \tme.getViewModel().set('record', record);",
+                    "        }",
+                    "",
+                    "        // Set title",
+                    "        //DDB formPanel.setTitle(panelTitle);",
+                    "",
+                    "        // Show form",
+                    "        me.showView('formMain');"
+                ]
+            },
+            "configAlternates": {
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "showEditForm",
+            "designerId": "cb42bf63-441a-40ba-93a9-6ab8d2b5349c"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "addUser",
+                "implHandler": [
+                    " var formPanel = this.getReferences().formFields,",
+                    "            form = formPanel.getForm(),",
+                    "            newRecord = Ext.create('model.user');",
+                    "",
+                    "        newRecord.data.id = 0;",
+                    "        newRecord.data.active = true;",
+                    "",
+                    "",
+                    "        this.showEditForm(newRecord);"
+                ]
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "addUser",
+            "designerId": "46f92696-7235-4e6d-88ea-e506bc52d1b8"
+        }
+    ]
+}

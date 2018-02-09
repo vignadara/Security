@@ -1,0 +1,7 @@
+{
+    "publishPath": "",
+    "webBuild": {
+        "environment": "testing",
+        "publishPath": "C:\\Users\\dsvdara\\eclipse-workspace\\security\\DIAM_SECURITY\\WebContent\\UserInterface"
+    }
+}

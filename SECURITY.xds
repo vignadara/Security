@@ -1,0 +1,84 @@
+{
+    "name": "SECURITY",
+    "settings": {
+        "cmd": {
+            "cmdVersion": "",
+            "license": "commercial"
+        },
+        "urlPrefixTemplate": "http://localhost:{port}/{path}",
+        "urlPrefix": "http://localhost:49831/",
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "exportPath": "C:/Users/dsvdara/eclipse-workspace/security/DIAM_SECURITY/WebContent/UserInterface",
+        "spacesToIndent": 4,
+        "sdkPath": "",
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "lastBuildSelection": {
+            "value": "webBuild",
+            "display": "Build web app",
+            "buildPlatform": false
+        }
+    },
+    "xdsVersion": "4.2.2",
+    "xdsBuild": 282,
+    "schemaVersion": 1,
+    "upgradeVersion": 310000000001,
+    "framework": "ext62",
+    "viewOrderMap": {
+        "view": [
+            "370c1ab4-e718-4020-a48d-ef92105e6e0c",
+            "f87561f8-6aa8-407f-83fe-5f9db1aaf63a",
+            "9510f1ac-5751-4f51-835f-5f5cb9838589",
+            "5fe6882e-a454-414a-a9f7-b577b7157939",
+            "80f531ee-32f6-4f01-9c74-96779541573c",
+            "b83fff58-62fc-47b8-a98c-cffae850af0f",
+            "899ebb25-5261-49bd-ac78-f88b1866f735",
+            "6ffe110c-1955-4e6d-b026-6aa81ff1c897",
+            "99a5bfed-eaae-404e-9ce6-b32d03f028a7",
+            "ac60483a-8e42-477d-946a-d3826b3df9f7",
+            "78bc6506-2c47-4738-9c33-0e92e77f47c8",
+            "90ebbda8-38b0-45c3-a5e2-5e2099b1acc8"
+        ],
+        "store": [
+            "55506579-00de-40c9-8605-e58a576b8a87",
+            "17892f17-ab96-4093-966e-fc34a424555b"
+        ],
+        "controller": [
+            "e67f1ffc-ed58-461b-8cde-dc506774425c"
+        ],
+        "model": [
+            "4e498d04-f12f-4674-a34c-aa59519e1798",
+            "5b5303e9-d410-4e93-84f7-132b1b71e7c8",
+            "407627f1-0599-4454-bb77-cfcfc3a4c913",
+            "8a390104-02ae-4c57-bf89-7aeac7754dd7",
+            "31340755-bf9b-4f9c-8b7f-79f4c1f519ba",
+            "e2f9ea42-94c0-4a13-927a-22ea14ac65f9",
+            "c66a8bb9-9d85-4060-93e3-34141f4830ba",
+            "bf557c90-892f-4f88-a46c-2050fc9cb6fc",
+            "333fc0b2-8f52-47d3-970c-688524378825",
+            "67084dca-d8dd-41b8-80c4-04b03f43d545",
+            "c207f7dc-d2c1-44b3-9422-eef3e5940895",
+            "4fd5c09d-a3b7-48da-bb03-1208ef0872cb",
+            "cadcec66-a6ed-4589-9c7e-4eb9e4d3fccb"
+        ],
+        "resource": [
+            "f6ce9357-0828-4110-872c-bbc4fcf8b89d",
+            "4e9dfcff-09bb-49f5-be94-73c6ff836845",
+            "3d15a21e-46ef-4fd0-88ca-62030a6dbb2c",
+            "7d752378-b8ae-410e-8978-6ddda2d2eaa6"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

@@ -1,0 +1,140 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "roles",
+        "designer|userClassName": "RolesViewController"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "designerId": "90ebbda8-38b0-45c3-a5e2-5e2099b1acc8",
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "view"
+                ],
+                "fn": "showView",
+                "implHandler": [
+                    "var layout = this.getReferences().display.getLayout();",
+                    "layout.setActiveItem(this.lookupReference(view));"
+                ]
+            },
+            "configAlternates": {
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "showView",
+            "designerId": "8d7845e6-9113-48a4-88b1-f4912e5b4105"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "record, panelTitle"
+                ],
+                "fn": "showEditForm",
+                "implHandler": [
+                    " var formPanel = this.getReferences().formFields,",
+                    "form = formPanel.getForm(),",
+                    "     actionsStore = this.getStore('actionsAssignedToRoleDTO');",
+                    "",
+                    "        // Load record model into form",
+                    "        form.loadRecord(record);",
+                    "",
+                    "        // Set title",
+                    "        formPanel.setTitle(panelTitle);",
+                    "",
+                    "        Ext.log('record is');",
+                    "        Ext.log({msg:record.data});",
+                    "        Ext.log({msg:record.data.id});",
+                    "",
+                    "        actionsStore.removeAll();",
+                    "",
+                    "        actionsStore.getProxy().setUrl('/DIAM_SECURITY/api/admin/actions_for_role/' + record.data.id);",
+                    "        actionsStore.load();",
+                    "",
+                    "        // Show form",
+                    "        this.showView('formMain');"
+                ]
+            },
+            "configAlternates": {
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "showEditForm",
+            "designerId": "194333e8-791a-4569-8ec1-b29354ec2ac8"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "editRole",
+                "implHandler": [
+                    " var record = this.getViewModel().get('record');",
+                    "        var title = 'Edit role \"' + record.data.name + '\"';",
+                    "        this.showEditForm(record, title);"
+                ]
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "editRole",
+            "designerId": "a1343ef5-591f-4e1b-8212-15f0a80daa03"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "addRole",
+                "implHandler": [
+                    "  var formPanel = this.getReferences().formFields,",
+                    "            form = formPanel.getForm(),",
+                    "            newRecord = Ext.create('model.role');",
+                    "",
+                    "        newRecord.data.id = 0;",
+                    "        newRecord.data.roleTypeId = null;",
+                    "",
+                    "        // Clear form",
+                    "        form.reset();",
+                    "",
+                    "        this.showEditForm(newRecord, 'Add Role');"
+                ]
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "addRole",
+            "designerId": "356710ef-138c-409e-9060-fc42f46528bd"
+        }
+    ]
+}

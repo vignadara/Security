@@ -1,0 +1,264 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "users",
+        "designer|userClassName": "UsersViewModel"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "designerId": "f87561f8-6aa8-407f-83fe-5f9db1aaf63a",
+    "cn": [
+        {
+            "type": "Ext.data.Store",
+            "reference": {
+                "name": "stores",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoLoad": true,
+                "data": null,
+                "model": "User",
+                "name": "users"
+            },
+            "configAlternates": {
+                "autoLoad": "boolean",
+                "data": "array",
+                "model": "model",
+                "name": "string"
+            },
+            "name": "users",
+            "designerId": "1a94755e-7ac1-445d-b3b7-dad6d2a29c5b",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "store",
+                    "type": "string"
+                }
+            ],
+            "cn": [
+                {
+                    "type": "Ext.data.proxy.Ajax",
+                    "reference": {
+                        "name": "proxy",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "extraParams": [
+                            "{applicationCode: 'CAMS'}"
+                        ],
+                        "url": "/DIAM_SECURITY/api/admin/users"
+                    },
+                    "configAlternates": {
+                        "extraParams": "object",
+                        "url": "string"
+                    },
+                    "name": "MyAjaxProxy",
+                    "designerId": "eb740415-eb4a-40b5-89dc-3f7e219fbd33",
+                    "cn": [
+                        {
+                            "type": "Ext.data.reader.Json",
+                            "reference": {
+                                "name": "reader",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "rootProperty": "data"
+                            },
+                            "configAlternates": {
+                                "rootProperty": "string"
+                            },
+                            "name": "MyJsonReader",
+                            "designerId": "771ba396-eab1-4c15-94fa-c891f591da3c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "jsonstore",
+            "reference": {
+                "name": "stores",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoLoad": true,
+                "model": "SalesDepartment",
+                "name": "SalesDepartmentStore"
+            },
+            "configAlternates": {
+                "autoLoad": "boolean",
+                "model": "model",
+                "name": "string"
+            },
+            "name": "MyJsonStore3",
+            "designerId": "7abc7c33-41e2-41ad-81a2-fd86fbb501e0",
+            "cn": [
+                {
+                    "type": "Ext.data.proxy.Ajax",
+                    "reference": {
+                        "name": "proxy",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "extraParams": [
+                            "{applicationCode: 'CAMS'}"
+                        ],
+                        "url": "/DIAM_SECURITY/api/admin/sales_departments"
+                    },
+                    "configAlternates": {
+                        "extraParams": "object",
+                        "url": "string"
+                    },
+                    "name": "MyAjaxProxy4",
+                    "designerId": "b629e103-b35f-4452-9434-d616cee69660",
+                    "cn": [
+                        {
+                            "type": "Ext.data.reader.Json",
+                            "reference": {
+                                "name": "reader",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "rootProperty": "data"
+                            },
+                            "configAlternates": {
+                                "rootProperty": "string"
+                            },
+                            "name": "MyJsonReader6",
+                            "designerId": "1e742115-3821-47dd-b180-042ec1e4bdc0"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "jsonstore",
+            "reference": {
+                "name": "stores",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoLoad": true,
+                "model": "Role",
+                "name": "GenericRoles"
+            },
+            "configAlternates": {
+                "autoLoad": "boolean",
+                "model": "model",
+                "name": "string"
+            },
+            "name": "MyJsonStore4",
+            "designerId": "413a78e5-1015-45bb-8041-600b6b55d422",
+            "cn": [
+                {
+                    "type": "Ext.data.proxy.Ajax",
+                    "reference": {
+                        "name": "proxy",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "extraParams": [
+                            "{applicationCode: 'CAMS'}"
+                        ],
+                        "url": "/DIAM_SECURITY/api/admin/roles/GENERIC"
+                    },
+                    "configAlternates": {
+                        "extraParams": "object",
+                        "url": "string"
+                    },
+                    "name": "MyAjaxProxy5",
+                    "designerId": "8c95f3e8-205d-4641-b3ac-2e6012e4ad18",
+                    "cn": [
+                        {
+                            "type": "Ext.data.reader.Json",
+                            "reference": {
+                                "name": "reader",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "rootProperty": "data"
+                            },
+                            "configAlternates": {
+                                "rootProperty": "string"
+                            },
+                            "name": "MyJsonReader7",
+                            "designerId": "e18a3ccd-cbbc-43a8-9d5d-a4146f21127a"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "jsonstore",
+            "reference": {
+                "name": "stores",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoLoad": true,
+                "model": "NotificationFrequency",
+                "name": "NotificationFrequencyStore"
+            },
+            "configAlternates": {
+                "autoLoad": "boolean",
+                "model": "model",
+                "name": "string"
+            },
+            "name": "MyJsonStore5",
+            "designerId": "92231e46-7701-44c6-8bcc-c68e4bb3dafd",
+            "cn": [
+                {
+                    "type": "Ext.data.proxy.Ajax",
+                    "reference": {
+                        "name": "proxy",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "url": "/DIAM_SECURITY/api/admin/notification_frequencies"
+                    },
+                    "configAlternates": {
+                        "url": "string"
+                    },
+                    "name": "MyAjaxProxy8",
+                    "designerId": "91195f2b-b502-4b02-81e3-b0b18690abb8",
+                    "cn": [
+                        {
+                            "type": "Ext.data.reader.Json",
+                            "reference": {
+                                "name": "reader",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "rootProperty": "data"
+                            },
+                            "configAlternates": {
+                                "rootProperty": "string"
+                            },
+                            "name": "MyJsonReader9",
+                            "designerId": "15ede24f-cd00-4340-9a87-0d3a78285361"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
